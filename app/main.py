@@ -10,7 +10,7 @@ def battle(knights_config: dict) -> dict:
     for knight in knights.values():
         knight.prepare_for_battle()
 
-    Battle.fight(knights["Lancelot"], knights["Mordred"])
-    Battle.fight(knights["Arthur"], knights["Red Knight"])
+    Battle.fight(knights["lancelot"], knights["mordred"])
+    Battle.fight(knights["arthur"], knights["red_knight"])
 
     return {name: knight.hp for name, knight in knights.items()}
