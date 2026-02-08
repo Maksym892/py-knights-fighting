@@ -13,4 +13,7 @@ def battle(knights_config: dict) -> dict:
     Battle.fight(knights["lancelot"], knights["mordred"])
     Battle.fight(knights["arthur"], knights["red_knight"])
 
-    return {name: knight.hp for name, knight in knights.items()}
+    return {
+        knight.name: knight.hp
+        for knight in knights.values()
+    }
